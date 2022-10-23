@@ -1,0 +1,129 @@
+@import './vendor/normalize';
+@import './vendor/reset';
+@import './fonts';
+@import './vars';
+@import './extends';
+@import './components/all';
+
+.intro {
+	position: relative;
+	height: 600px;
+	background: url(/assets/images/photos/computer.jpg) no-repeat;
+	background-size: cover;
+}
+
+.intro__descr {
+	position: absolute;
+	bottom: 0;
+	width: 445px;
+	height: 357px;
+	background-color: white;
+}
+
+.intro__title {
+	font-family: 'Ibarra Real Nova', serif;
+	font-size: 50px;
+	font-weight: $weight;
+	color: $color;
+	line-height: 50px;
+	padding: 41px 55px 0 0;
+}
+
+.block {
+	@extend %block;
+}
+
+.arrow {
+	@extend %arrow;
+}
+
+.btn {
+	@extend %btn;
+}
+
+.about {
+	margin-top: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about__blog {
+	height: 600px;
+	width: 345px;
+	border-top: #d1d1d3 1px solid;
+	border-bottom: #d1d1d3 1px solid;
+}
+
+.blog__title {
+	margin-top: 50px;
+	@extend %card-title;
+}
+
+.blog__subtitle {
+	@extend %card-subtitle;
+}
+
+.blog__btn {
+	@extend %card-btn;
+}
+
+.end {
+	margin-top: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.end__title {
+	font-family: 'Ibarra Real Nova', serif;
+	width: 350px;
+	font-size: 40px;
+	font-weight: $weight;
+	line-height: 42px;
+}
+
+.end__line {
+	height: 1px;
+	width: 535px;
+	background-color: $color;
+	opacity: 15%;
+}
+
+.end__btn {
+	@extend %card-btn;
+	padding: 8px 32px;
+}
+
+@media (max-width: 1080px) {
+	.about {
+		flex-direction: column;
+	}
+
+	.about__blog {
+		text-align: center;
+		border-top: none;
+	}
+
+	.end__line {
+		display: none;
+	}
+}
+
+@media (max-width: 546px) {
+	.end {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.end__title {
+		margin: -100px 0 50px;
+	}
+}
+
+@media (max-width: 474px) {
+	.intro {
+		background: none;
+		background-color: white;
+	}
+}

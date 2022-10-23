@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	src: local('Public Sans Regular'),
+		local('PublicSans-Regular'),
+		url('../fonts/woff2/PublicSans-Regular.woff2') format('woff2'),
+		url('../fonts/woff/PublicSans-Regular.woff') format('woff'),
+		url('/fonts/ttf/PublicSans-Regular.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	src: local('Public Sans Bold'),
+		local('PublicSans-Bold'),
+		url('../fonts/woff2/PublicSans-Bold.woff2') format('woff2'),
+		url('../fonts/woff/PublicSans-Bold.woff') format('woff'),
+		url('/fonts/ttf/PublicSans-Bold.ttf') format('ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Ibarra Real Nova', serif;
+	font-weight: 700;
+	font-style: normal;
+	src: local('Ibarra Real Nova Bold'),
+		local('IbarraRealNova-Bold'),
+		url('../fonts/woff2/IbarraRealNova-Bold.woff2') format('woff2'),
+		url('../fonts/woff/IbarraRealNova-Bold.woff') format('woff'),
+		url('/fonts/ttf/IbarraRealNova-Bold.ttf') format('ttf');
+	font-display: swap;
+}

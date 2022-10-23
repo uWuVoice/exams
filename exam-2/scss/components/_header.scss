@@ -1,0 +1,30 @@
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 65px;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list__item:not(:last-child) {
+	margin-right: 42px;
+}
+
+.item__link {
+	color: $color;
+	transition: color .2s linear;
+
+	&:hover {
+		color: #5FB4A2;
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		padding: 0 15px;
+	}
+}

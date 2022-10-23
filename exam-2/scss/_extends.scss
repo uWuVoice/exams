@@ -1,0 +1,53 @@
+%block {
+	display: inline-flex;
+	align-items: center;
+}
+
+%arrow {
+	height: 48px;
+	width: 48px;
+	background: url(/assets/images/icons/btn.svg) no-repeat;
+	background-position: center;
+	background-color: #1c3446;
+	cursor: pointer;
+	transition: all .2s linear;
+}
+
+%btn {
+	color: white;
+	background-color: #203A4C;
+	padding: 9px 45px;
+	transition: all .2s linear;
+
+	&:hover {
+		background-color: #5FB4A2;
+	}
+}
+
+%card-title {
+	font-family: 'Ibarra Real Nova', serif;
+	margin-bottom: 28px;
+	font-size: 40px;
+	color: $color;
+	font-weight: $weight;
+}
+
+%card-subtitle {
+	margin-bottom: 28px;
+	font-size: 16px;
+	color: $color;
+	opacity: 0.8;
+}
+
+%card-btn {
+	padding: 17px 36px;
+	letter-spacing: 2px;
+	color: $color;
+	border: 1px solid $color;
+	transition: all .2s linear;
+
+	&:hover {
+		background-color: $color;
+		color: white;
+	}
+}
